@@ -1,1 +1,11 @@
-<p>menu works!</p>
+<nav>
+    <ul [class]="menuStatus">
+        <li *ngFor="let item of menuItems">
+            <a [href]="item.url">{{item.name}}</a>
+        </li>
+    </ul>
+
+    <i (click)="menuClick()" class="material-symbols-outlined">
+        menu
+    </i>
+</nav>
