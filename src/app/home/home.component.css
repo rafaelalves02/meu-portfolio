@@ -59,3 +59,53 @@
 .banner .box .buttons a:hover {
     background: var(--color-blue-2);
 }
+
+/* box about */
+
+.about .box {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .box .img {
+    flex: 1;
+    margin: 0 auto 20px;
+}
+
+.about .box .img img {
+    width: 240px;
+    border-radius: 50%;
+}
+
+.about .box .text {
+    flex: 2;
+}
+
+.about .box .text h3 {
+    color: var(--color-blue-2);
+    margin-top: 15px;
+}
+
+.about .box .text p {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.about .box .text a {
+    color: var(--color-pink-1);
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .about .box {
+        flex-direction: row;
+    }
+
+    .about .box .img img {
+        width: 100%;
+    }
+
+    .about .box .text {
+        padding-left: 40px;
+    }
+}
