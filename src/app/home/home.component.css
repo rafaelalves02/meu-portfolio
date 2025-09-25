@@ -30,7 +30,7 @@
 .banner .box .title2 {
     font-size: var(--font-size-1);
     display: block;
-    max-width: 450px;
+    max-width: 550px;
 }
 
 .banner .box .buttons {
@@ -285,3 +285,13 @@
         flex-direction: row;
     }
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    z-index: 1;
+ }
+
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
